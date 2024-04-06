@@ -35,11 +35,11 @@ window.addEventListener('scroll', () => {
         var logoImage = document.querySelector('.logo img');
         if (window.innerWidth <= 425)
         { 
-            logoImage.src = '/img/logo-responsividade.png';
+            logoImage.src = '../img/logo-responsividade.png';
         } 
         else 
         {
-            logoImage.src = '/img/logo-removebg-preview.png';
+            logoImage.src = '../img/logo-removebg-preview.png';
         }
     });
 
