@@ -75,7 +75,7 @@ nav a:hover {
 
 .header-content{
     color: #000000;
-    background-image: url('/img/fr4.jpg');
+    background-image: url('./img/fr4.jpg');
     position: relative;
     background-size: cover;
     height: 590px;
