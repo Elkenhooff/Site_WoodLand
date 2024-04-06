@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body-cadastro">
+    <header class="header-cadastro">
+            <div class="logo2">
+                <a href="index.html"><img src="./img/logo-removebg-preview.png" alt="WoodLand"></a> 
+            </div>
+            <ul>
+            </ul>
+    </header>
+    <section id="info">  
+        <form action="enviar.php" id="form-contato">
+            <h1>Cadastro do Usuário</h1>
+            <fieldset id="info">
+                <legend>Informações Pessoais</legend>
+                <p>
+                    <label for="cnome">Nome</label>
+                    <input type="text" class="cnome" name="nome" 
+                    placeholder="Digite o seu nome " size="40">
+                </p>
+                <p>
+                    <label for="csenha">Senha</label>
+                    <input type="password" class="csenha" name="senha"
+                    placeholder="Max. 8 caracteres" size="20">
+                </p>
+                <p>
+                    <label for="cemail">Email</label>
+                    <input type="email" class="cemail" name="email"
+                    placeholder="nome@email.com" size="20">
+                </p>
+                <p>
+                    <label>Sexo: </label>
+                    <input type="radio" id="sexo" name="sexo" id="masculino">
+                    Masculino
+                    <input type="radio" id="sexo" name="sexo" id="feminino">
+                    Feminino
+                </p>
+                <p><label for="cdatanasc">Data de Nascimento</label>
+                <input type="date" id="cdatanasc" name="data-nascimento">
+                </p>
+            </fieldset>
+            <fieldset id="local">
+                <legend>Endereço</legend>
+                <p>
+                    <label for="clogradouro">Logradouro</label>
+                    <input type="text" id="clogradouro" name="logradouro"
+                    placeholder="Avenida, rua, travessa" size="40">
+                </p>
+                <p>
+                    <label for="cnumero">Número</label>
+                    <input type="number" name="numero" id="cnumero"
+                    placeholder="Número do local" size="20">
+                </p>
+                <p>
+                    <label for="cbairro">Bairro</label>
+                    <input type="text" id="cbairro" name="bairro">
+                </p>
+                    <label for="cestado">Estado</label>
+                    <select name="estado" id="cestado">
+                            <option selected>Selecione o estado(UF)</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                    </select>
+            </fieldset>
+            <fieldset id="escolha">
+                <legend>Escolha as opções</legend>
+                <p>
+                    <input type="checkbox" id="newsletter" name="escolha">
+                    Receber newsletter
+                    <input type="checkbox" name="escolha" id="newpromoletter">
+                    Receber Promoções
+                    <input type="checkbox" name="escolha" id="novidades">
+                    Receber Novidades							
+                </p>
+            </fieldset>
+            <fieldset id="mensagem">
+                <input type="submit" name="enviar">
+                <input type="reset" name="limpar">
+            </fieldset>
+        </form>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>Desenvolvido por Pedro Henrique David - TI 26 | © Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="#priv">Política de Privacidade</a></li>
+                <li><a href="#termos">Termos de Serviço</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="java.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/617f4dcf0c.js" crossorigin="anonymous"></script> 
+</body>
+</html>

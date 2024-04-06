@@ -1,0 +1,877 @@
+/* Reset de estilos básicos */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+header {
+    color: #000000;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 5px;
+    background-color: #000000;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 12%;
+    font-weight: bold;
+    transition: transform 1s ease-in-out;
+}
+
+.teste{
+    transform: translateY(-100%);
+}
+
+.logo img {
+    max-width: 250px;
+    margin-top: 0.5em;
+    margin-left: 1.25em;
+}
+
+.btn-menumobile {
+    display: block;
+    font-size: 1.75em;
+    color: #ccc;
+    position: absolute;
+    right: 1.5em;
+    top: 0.75em;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #743e00;
+}
+
+.header-content{
+    color: #000000;
+    background-image: url('/img/fr4.jpg');
+    position: relative;
+    background-size: cover;
+    height: 590px;
+    padding-top: 22rem;
+}
+
+.header-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: #ccc;
+}
+
+.header-content p{
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.cta-button:hover {
+    color: #6ef379;
+    background-color: transparent;
+    border: 2px solid #6bf877;
+}
+
+#sobre .section-content{
+    border-top:5px solid #ccc;
+    border-bottom:5px solid #ccc;
+    padding: 2rem;
+    background-color: #000000;
+}
+
+#sobre .section-content h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+#sobre .section-content h3{
+    color: #ccc;
+}
+
+#sobre .section-content p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    color:  #ccc;
+}
+
+.image img{
+    max-width: 600px;
+    max-height: 300px;
+    margin-top: 30px;
+    position: flex;
+    justify-content: space-around;
+}
+
+.image img#primeira{
+    margin-left: 150px;
+    margin-right: 300px;
+}
+
+#como-jogar .section-content{
+    background-image: url("/img/fr5.jpg");
+    background-size: cover;
+    height: 785px;
+    background-color: #000000;
+}
+
+#como-jogar .section-content h1{
+    font-size: 36px;
+    padding: 2em;
+    color: #ccc;
+    margin-left: -35px;
+    margin-bottom: -50px;
+}
+
+#como-jogar .section-content ul, #como-jogar .section-content p{
+    font-size: 18px;
+    margin-left: 40px;
+    list-style-type: none;
+    line-height: 30px;
+    color: #ccc;
+}
+
+#como-jogar .section-content .cta-button{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#noticias{
+    text-align: center;
+    padding: 5em 0;
+    border-top:5px solid #ccc;
+}
+
+#noticias .section-content article{
+    display: inline-block;
+    width: 30%;
+    padding: 0 1%;
+    text-align: left;
+}
+
+#noticias .section-content article p{
+    margin-bottom: 60px;
+}
+
+#noticias .section-content article img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#noticias .section-content h3{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#noticias .section-content h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+    
+}
+
+#noticias .section-content .cta-button{
+    margin-top: -30px;
+}
+
+#faq{
+    border-top:5px solid #ccc;
+    border-bottom:5px solid #ccc;
+}
+
+#faq .section-content h3{
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#faq .section-content{
+    margin-left: 2.5em;
+}
+
+#faq .faq-item{
+    margin-bottom: 40px;
+}
+
+#faq .faq-question{
+    cursor: pointer;
+}
+
+.arrow{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.faq-answer {
+    display: none;
+}
+
+#depoimentos .section-content{
+    margin-left: 2.5em;
+}
+
+
+#depoimento {
+    background: url('/img/yoal-desurmont-jqgsM3B9Fpo-unsplash.jpg') no-repeat;
+    background-size: cover;
+    padding: 16em 0.3em;
+}
+#depoimento h2,
+#depoimento p {
+    color: #efefef;
+    text-align: center;
+}
+#depoimento h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+#depoimento p {
+    margin-bottom: 50px;
+}
+.testmony-box {
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;  
+}
+#depoimento .testmony-box .testmony-msg {
+    background-color: #032901;
+    color: #d5ffd4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    margin: 35px auto;
+    font-style: italic;
+}
+.testmony-msg:after {
+    /*Criando a ponta da caixa de diágolo*/
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #032901;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testmony-box img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.testmony-name {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #bfffbe;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #4CAF50;
+}
+
+/*Conteúdo do Contato*/
+
+#contato{
+    padding: 2em 8em;
+    background-image: url('/img/2EPXdK7-green-forest-wallpaper.jpg');
+    background-repeat: no-repeat;
+}
+
+.table{
+    display: flex;
+    flex-flow: row wrap;
+    color: #000;
+    margin-top: 7em;
+    border: 10px solid #007209;
+    border-radius: 25px;
+    height: 500px;
+}
+
+#contato .section-content{
+    width: 45%;
+    background-color: #ffffff;
+}
+
+#contato .formu{
+    width: 55%;
+    background-color: #ffffff;
+    padding-top: 55px;
+}
+
+#contato #espaco{
+    margin-bottom: 3em;
+}
+
+#contato h1{
+    margin-top: 2em;
+    font-size: 30px;
+    font-weight: bold;  
+    color: #13110f;
+    margin-left: 1em;
+}
+
+#contato h2{
+    font-size: 20px;
+    color: #13110f;
+    margin-left: 1.6em;
+}
+
+#contato p{
+    font-size: 16px;
+    color: #5a5a5a;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formu form label{
+    font-size: 20px;
+    line-height: 200%;
+    margin-left: 3em;
+}
+
+.formu input[type=text], .formu input[type=email], .formu textarea{
+    border: #000000 solid 0.13em;
+    border-radius: 5px;
+    margin-left: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formu input[placeholder], .formu textarea[placeholder]{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formu input[type=text], .formu input[type=email]{
+    height: 35px;
+    width: 70%;
+}
+
+.formu textarea{
+    width: 70%;
+}
+
+.formu input[type=submit]{
+    margin-left: 66%;
+    margin-bottom: 20px;
+}
+
+.botao{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #606060;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.botao:hover{
+    background-color: #52e75e;
+    border: 2px solid #00fc15;
+}
+
+/*Cadastro Usuarios */
+.contact-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 5px;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+}
+
+.contact-info h2 {
+    margin-top: 150px;
+    font-size: 24px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: -100px;
+}
+
+.contact-form {
+    margin-top: 70px;
+    width: 500px;
+    line-height: 2em;
+    
+}
+.contact-form p {
+    margin-bottom: -90px;
+    line-height: 25px;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 120px;
+}
+
+button[type="submit"] {
+    background-color: #007209;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    color: #ccc;
+    background-color: transparent;
+    border:1px solid #000;
+}
+/*Cadastro dos usuários*/
+.body-cadastro {
+    background-color: #ccc;
+}
+.header-cadastro {
+    background-color: #007209;
+}
+.logo2 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.logo2 img {
+    max-width: 250px;
+    margin-top: 0.5em;
+    margin-left: 1.25em;
+}
+#form-contato {
+	background-color: #fff;
+	padding: 15px;
+	width: 800px;
+    height: 800px;
+	margin-top: 150px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    
+}
+#form-contato fieldset {
+	border-bottom: 0.5px solid #ccc;
+	margin-bottom: 16px;
+}
+#form-contato fieldset legend {
+	font-size: 100%;
+	font-weight: bold;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.input, textarea {
+	padding: 5px;
+	box-shadow: 1px 1px 3px #666;
+	margin-left: 10px;
+}
+select{
+	padding: 5px;
+	box-shadow: 1px 1px 3px #666 ;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+input[type=radio], input[type=checkbox] {
+	box-shadow: 0 0 0 ;
+	margin-right: 20px;
+}
+input[type=text] {
+	width: 450px;
+}
+textarea {
+	margin-top: 10px;
+	width: 450px;
+	height: 100px;
+}
+label {
+	margin-left: 10px;
+}
+
+#info input{
+    margin-bottom: 10px;
+}
+input[type=submit],input[type=reset]{
+	background-color: #007209;
+	color: #000;
+	font-weight: 300;
+	font-size: 90%;
+	padding: 5px 10px;
+	cursor: pointer;
+    margin-left: 10px;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+}
+/* Responsividade Index 4k */
+@media screen and (max-width:2560px)
+{
+    .btn-menumobile
+    {
+        font-size: 0;
+        margin-top: 30px;
+        color: #000;
+        display: none;
+    }
+}
+
+/* Reponsividade Index 1024px */
+
+@media screen and (max-width:1024px) 
+{
+
+    .image img#primeira{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+/* Reponsividade Index 768px a 577px */
+
+@media screen and (max-width:768px) 
+{
+
+    .image img#primeira{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    /* Responsividade Contato 768 a 576px */
+    #contato h1{
+        font-size: 22px;
+        margin-left: 1.2em;
+    }
+
+    #contato p{
+        font-size: 14px;
+    }
+
+    #contato h2{
+        font-size: 18px;
+    }
+
+    .formu input[type=submit]{
+        margin-left: 60%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsividade Index 425 a 576px */
+@media screen and (max-width:576px) 
+{
+
+    
+    .btn-menumobile{
+        font-size: 1.75em;
+        margin-top: 1rem;
+        color: rgb(246, 246, 246);
+    }
+
+    .open {
+        display: block !important;
+    }
+
+    .logo img{
+        max-width: 50px;
+        margin-top: 0;
+        margin-left: 0.75rem;
+    }
+    nav li{
+        display: none;
+    }
+
+    .header-content{
+        padding-top: 16rem;
+    }
+
+    .header-content h2{
+        font-size: 28px;
+    }
+
+
+    .image img#primeira{
+        margin-left: 85px;
+        margin-right: 0px;
+    }
+
+    .image img#segunda{
+        display: none;
+    }
+
+    #sobre .section-content h1{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        color: #ccc;
+    }
+
+    #sobre .section-content p{
+        font-family:'Courier New', Courier, monospace;
+        font-size: 16px;
+        color:  #ccc;
+    }
+
+    #sobre .section-content h3{
+        color: #ccc;
+        font-size: 22px;
+    }
+
+    #como-jogar .section-content h1{
+        font-size: 30px;
+        padding: 2em;
+        color: #ccc;
+        margin-left: -35px;
+        margin-bottom: -50px;
+    }
+
+    #como-jogar .section-content ul, #como-jogar .section-content p{
+        font-size: 16px;
+        margin-left: 28px;
+        list-style-type: none;
+        line-height: 30px;
+        color: #ccc;
+    }
+
+    #como-jogar .section-content .cta-button{
+        margin-top: 15px;
+        margin-left: 28px;
+    }
+
+    #noticias .section-content h3{
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+
+    #noticias .section-content article{
+        display: inline-block;
+        width: 30%;
+        padding: 0 1%;
+        text-align: left;
+    }
+
+    #noticias .section-content h4{
+        font-size: 18px;
+        margin-bottom: 15px;
+        
+    }
+
+    #noticias .section-content article p{
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    #faq .section-content h3{
+        font-size: 24px;
+        margin-bottom: 35px;
+        text-align: left;
+    }
+
+    #faq .faq-item{
+        margin-bottom: 20px;
+    }
+
+    #faq .section-content{
+        margin-left: 0.4em;
+    }
+
+    #faq .faq-question{
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    #faq .faq-answer {
+        display: none;
+        font-size: 14px;
+    }
+
+    #depoimento {
+        background: url('/img/yoal-desurmont-jqgsM3B9Fpo-unsplash.jpg') no-repeat;
+        background-size: cover;
+        padding: 6em 0.3em;
+    }
+
+    #depoimento h2 {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    #depoimento p {
+        color: #efefef;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .testmony-box {
+        display: inline-block;
+        width: 20.5%;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    #depoimento .testmony-box .testmony-msg {
+        background-color: #032901;
+        color: #d5ffd4;
+        border-radius: 10px;
+        padding: 10px;
+        width: 80%;
+        position: relative;
+        margin: 35px auto;
+        font-style: italic;
+    }
+
+    .testmony-box img {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+    }
+
+    .footer-content a {
+        text-decoration: none;
+        color: #bfffbe;
+        transition: color 0.3s;
+        font-size: 15px;
+    }
+
+    .footer-content p{
+        font-size: 15px;
+    }
+    /* Responsividade do Contatos*/
+    #contato{
+        padding: 1em 0.5em;
+    }
+    #contato .section-content{
+        width: 45%;
+        background-color: #ffffff;
+    }
+    
+    #contato .formu{
+        width: 55%;
+        background-color: #ffffff;
+        padding-top: 55px;
+    }
+
+    .table{
+        display: flex;
+        flex-flow: row wrap;
+        color: #000;
+        margin-top: 8em;
+        border: 1px solid #007209;
+        border-radius: 25px;
+        height: 100%;
+    }
+}
